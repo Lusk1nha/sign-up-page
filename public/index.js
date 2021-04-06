@@ -44,18 +44,20 @@ function validInput(e) {
     claimButton.disabled = false
 
   } else claimButton.disabled = true
+
+  return
 }
 
 function setError(input, error) {
   const inputContainer = input.parentElement
   inputContainer.childNodes[3].innerHTML = error
 
-  inputContainer.classList.add('error')
+  return inputContainer.classList.add('error')
 }
 
 function removeError(input) {
   const inputContainer = input.parentElement
   inputContainer.childNodes[3].innerHTML = ''
 
-  inputContainer.classList.remove('error')
+  return inputContainer.classList.remove('error')
 }
