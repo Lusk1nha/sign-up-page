@@ -1,0 +1,63 @@
+@media screen and (min-width: 800px) {
+  body {
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 50px 50px 30px;
+
+  }
+
+  body * {
+    max-width: 500px;
+  
+  }
+
+  body::before {
+    background-image: url('../assets/bg-intro-desktop.png');
+
+    height: 100vh;
+
+  }
+
+  header {
+    text-align: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 0px 50px 0px 15px;
+
+  }
+
+  header .title-text {
+    font-size: 2rem;
+  }
+
+  header .text {
+    font-size: 0.86rem;
+    line-height: 1.5rem;
+  
+  }
+
+  .inputContainer input {
+    height: 50px;
+
+  }
+
+  .inputContainer.error::before {
+    width: 50px;
+    height: 50px;
+    
+  }
+
+  .inputContainer button {
+    min-height: 50px;
+
+  }
+
+  .trial-form p,
+  .trial-form p strong {
+    display: inline;
+
+  }
+
+}

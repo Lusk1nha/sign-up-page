@@ -4,39 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header id="about-site">
+    <h1 class="title-text">Learn to code by watching others</h1>
+    <p class="text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable</p>
+  </header>
 
-  Learn to code by watching others
+  <main id="trialContainer">
+    <section class="trial-text">
+      <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+    </section>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <form class="trial-form">
 
-  Try it free 7 days then $20/mo. thereafter
+      <div class="inputContainer error">
+        <input type="text" placeholder="First Name">
+        <h5 class="errorName">First Name cannot be empty</h5>
+      </div>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+      <div class="inputContainer">
+        <input type="text" placeholder="Last Name">
+        <h5 class="errorName"></h5>
+      </div>
 
-  Claim your free trial 
+      <div class="inputContainer">
+        <input type="email" placeholder="Email Address">
+        <h5 class="errorName"></h5>
+      </div>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      <div class="inputContainer">
+        <input type="password" placeholder="Password">
+        <h5 class="errorName"></h5>
+      </div>
+
+      <button class="claim-trial" type="submit">Claim your free trial</button>
+
+      <p class="agree-text">
+        By clicking the button, you are agreeing to our <strong>Terms and Services</strong>
+      </p>
+    </form>
+
+  </main>
 </body>
 </html>
